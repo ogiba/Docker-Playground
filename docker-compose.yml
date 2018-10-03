@@ -6,7 +6,7 @@ services:
             - "8001:80"
         volumes:
             - ./www:/var/www/html/
-            - ./config/php.ini:/usr/local/etc/php/conf.d/custom.ini
+            - ./config/php.ini:/usr/local/etc/php/php.ini
         links:
             - db
         networks:
