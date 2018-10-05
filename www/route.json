@@ -1,10 +1,14 @@
 {
   "index": {
     "path": "/",
-    "controller": "\\viewcontroller\\IndexController"
+    "controller": "\\viewcontroller\\IndexController::render"
   },
   "test": {
     "path": "/test",
-    "controller": "\\viewcontroller\\TestController"
+    "controller": "\\viewcontroller\\TestController::render"
+  },
+  "test_show": {
+    "path": "/test/{id}",
+    "controller": "\\viewcontroller\\TestController::show"
   }
 }

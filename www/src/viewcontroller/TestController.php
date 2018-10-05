@@ -10,4 +10,11 @@ class TestController extends BaseController {
 
         ]);
     }
+
+    public function show($id)
+    {
+        echo $this->template("view/view_test.php", [
+            "id" => $id
+        ]);
+    }
 }

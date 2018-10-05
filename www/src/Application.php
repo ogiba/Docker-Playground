@@ -12,8 +12,9 @@ class Application
         }
 
         $router = new Router();
-        $controller = $router->route($path);
+        echo $router->route($path);
 
-        call_user_func_array([$controller, "render"], []);
+        // call_user_func($controller);
+        // call_user_func_array([$controller, "render"], []);
     }
 }
