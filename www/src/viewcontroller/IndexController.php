@@ -1,6 +1,6 @@
 <?php
 
-namespace controller;
+namespace viewcontroller;
 
 class IndexController extends BaseController
 {
@@ -8,7 +8,7 @@ class IndexController extends BaseController
 
     public function render()
     {
-        echo $this->template("view/indexView.php", [
+        echo $this->template("view/view_index.php", [
             "testParam" => $this->param
         ]);
     }

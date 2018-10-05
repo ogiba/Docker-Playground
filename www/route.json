@@ -1,0 +1,10 @@
+{
+  "index": {
+    "path": "/",
+    "controller": "\\viewcontroller\\IndexController"
+  },
+  "test": {
+    "path": "/test",
+    "controller": "\\viewcontroller\\TestController"
+  }
+}

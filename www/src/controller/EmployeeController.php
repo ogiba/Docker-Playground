@@ -1,5 +1,7 @@
 <?php
 
+namespace controller;
+
 class EmployeeController
 {
     public function loadUsers()

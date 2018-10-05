@@ -1,6 +1,6 @@
 <?php
 
-namespace controller;
+namespace viewcontroller;
 
 abstract class BaseController {
     /* @param $file   - Path to the PHP file that acts as a template.

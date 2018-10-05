@@ -1,12 +1,18 @@
 <?php 
 
-use controller\IndexController;
-
 class Application
 {
     public function run()
     {
-        $controller = new IndexController();
-        $controller->render();
+        $controller = $this->route();
+
+        call_user_func_array([$controller, "render"], []);
+    }
+
+    private function route() {
+        $a = file_get_contents("route.json");
+        $json = json_decode($a, true);
+
+        return new $json["test"]["controller"];
     }
 }
