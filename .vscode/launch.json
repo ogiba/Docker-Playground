@@ -11,8 +11,7 @@
             "pathMappings": {
                 "/var/www/html": "${workspaceRoot}/www"
             },
-            "port": 9000,
-            "log": true
+            "port": 9000
         },
         {
             "name": "Launch currently open script",
